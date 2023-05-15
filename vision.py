@@ -100,5 +100,5 @@ while True:
         time.sleep(1)
         
     except KeyboardInterrupt:
-        detener()
+        detener() #aun no se ha creado
         break
