@@ -13,9 +13,10 @@ import ujson as json
 import utime as time
 from time import sleep
 from machine import reset
+import cv2
 
 # Configuración de la red Wi-Fi
-SSID = 'nombre_de_red' # Comprar modem o 
+SSID = 'nombre_de_red' # Comprar modem o  router
 PASSWORD = 'contraseña_de_red'
 
 # Dirección IP de la Raspberry Pi 4B
@@ -96,9 +97,14 @@ while True:
             else:
                 print('Error al enviar la petición a la Raspberry Pi 4B')
         
+        # Mostrar el flujo de video en una ventana
+        cv2.imshow('Flujo de Video', imagen)
+        cv2.waitKey(1)
         # Esperar un tiempo antes de tomar la siguiente imagen
         time.sleep(1)
         
     except KeyboardInterrupt:
-        detener() #aun no se ha creado
+        detener()
         break
+# Cerrar la ventana de visualización
+cv2.destroyAllWindows()
