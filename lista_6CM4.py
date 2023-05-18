@@ -1,1 +1,1 @@
-print("\nsalgado Licea Eduardo\n")
+print("\n\nsalgado Licea Eduardo\n\n")
