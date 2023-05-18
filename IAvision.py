@@ -1,4 +1,3 @@
-# Importar las bibliotecas necesarias
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
