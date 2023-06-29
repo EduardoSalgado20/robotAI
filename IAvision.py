@@ -15,7 +15,7 @@ from time import sleep
 from machine import reset
 import cv2
 
-# Configuración de la red Wi-Fi
+# Configuración de la red Wi-Fi cambiando un poco
 SSID = 'nombre_de_red' # Comprar modem o  router
 PASSWORD = 'contraseña_de_red'
 
